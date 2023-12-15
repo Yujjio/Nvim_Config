@@ -1,4 +1,10 @@
 -- general
+
+-- set no compatible
+vim.opt.compatible = false
+vim.opt.filetype = 'on' -- enable filetype detection
+vim.opt.fileencodings = 'utf-8' -- set file encoding to utf-8
+vim.opt.encoding = 'utf-8' -- set encoding to utf-8
 vim.opt.clipboard = 'unnamedplus' -- use system clipboard
 vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
 

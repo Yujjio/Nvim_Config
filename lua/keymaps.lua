@@ -34,7 +34,6 @@ keymap('n', '<S-s>', ':w<CR>', opts)
 keymap('n', '<S-q>', ':q<CR>', opts)
 keymap('n', '<Space>', ':NERDTree<CR>', opts)
 
-
 -----------------
 -- Visual mode --
 -----------------
