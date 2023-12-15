@@ -9,4 +9,5 @@ return require('packer').startup(function()
     use 'mhinz/vim-startify'  -- start screen
     use 'airblade/vim-gitgutter'  -- git diff in gutter
     use 'tpope/vim-fugitive'  -- git commands
+    use 'vim-syntastic/syntastic'  -- syntax checking
 end)
