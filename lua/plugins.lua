@@ -10,4 +10,6 @@ return require('packer').startup(function()
     use 'airblade/vim-gitgutter'  -- git diff in gutter
     use 'tpope/vim-fugitive'  -- git commands
     use 'vim-syntastic/syntastic'  -- syntax checking
+    use 'Zeioth/compiler.nvim'  -- compile and run code
+    use 'stevearc/overseer.nvim'  -- run tests
 end)

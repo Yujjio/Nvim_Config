@@ -2,6 +2,10 @@
 vim.opt.clipboard = 'unnamedplus' -- use system clipboard
 vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
 
+-- syntax on
+vim.cmd[[syntax enable]]
+vim.cmd[[syntax on]]
+
 -- Tab
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -25,6 +29,7 @@ vim.cmd[[colorscheme abscs]] -- color theme
 vim.g.NERDTreeShowHidden = 1
 
 -- syntastic
+
 -- Set statusline highlighting for warning messages
 vim.cmd[[set statusline+=%#warningmsg#]]
 
@@ -35,12 +40,30 @@ vim.cmd[[set statusline+=%{SyntasticStatuslineFlag()}]]
 vim.cmd[[set statusline+=%*]]
 
 -- Syntastic settings
+-- use ubuntu's default shell
+vim.g.syntastic_shell = 'sh'
 vim.g.syntastic_always_populate_loc_list = 1
 vim.g.syntastic_loc_list_height = 5
 vim.g.syntastic_auto_loc_list = 0
 vim.g.syntastic_check_on_open = 1
 vim.g.syntastic_check_on_wq = 1
+
 vim.g.syntastic_javascript_checkers = {'eslint'}
+vim.g.syntastic_python_checkers = {'flake8'}
+vim.g.syntastic_php_checkers = {'php'}
+vim.g.syntastic_html_checkers = {'tidy'}
+vim.g.syntastic_css_checkers = {'csslint'}
+vim.g.syntastic_scss_checkers = {'scss-lint'}
+vim.g.syntastic_ruby_checkers = {'rubocop'}
+vim.g.syntastic_yaml_checkers = {'yamllint'}
+vim.g.syntastic_cpp_checkers = {'clang'}
+vim.g.syntastic_c_checkers = {'clang', 'gcc'}
+vim.g.syntastic_java_checkers = {'javac'}
+vim.g.syntastic_lua_checkers = {'luac'}
+vim.g.syntastic_markdown_checkers = {'markdownlint'}
+vim.g.syntastic_json_checkers = {'jsonlint'}
+vim.g.syntastic_typescript_checkers = {'tslint'}
+
 vim.g.syntastic_error_symbol = '❌'
 vim.g.syntastic_style_error_symbol = '⁉️'
 vim.g.syntastic_warning_symbol = '⚠️'
@@ -49,3 +72,4 @@ vim.g.syntastic_style_warning_symbol = '💩'
 vim.cmd[[highlight link SyntasticErrorSign SignColumn]]
 vim.cmd[[highlight link SyntasticWarningSign SignColumn]]
 vim.cmd[[highlight link SyntasticStyleErrorSign SignColumn]]
+

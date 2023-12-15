@@ -29,6 +29,7 @@ keymap('n', 'w', ':normal! 5k<CR>', opts)
 
 -- command
 keymap('n', '<S-r>', ':source ~/.config/nvim/init.lua<CR>', opts)
+keymap('n', '<C-r>', '<cmd>CompilerOpen<CR>', opts)
 keymap('n', '<S-s>', ':w<CR>', opts)
 keymap('n', '<S-q>', ':q<CR>', opts)
 keymap('n', '<Space>', ':NERDTree<CR>', opts)
